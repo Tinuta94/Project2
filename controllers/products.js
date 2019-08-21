@@ -1,30 +1,30 @@
 const express = require ('express')
-const productsApi = require ('../models/product.js')
+const productsApi = require ('../models/products.js')
 const productRouter = express.Router()
 
 
 productRouter.get('/', function(req, res) {
     productsApi.getProducts()
       .then(products => {
-        res.render('allProducts', {products})
+        res.render('products/allProducts', {products})
         
       })
   })
 
 productRouter.get('/new', function(req, res) {
-      res.render('createProduct')
+      res.render('products/createProduct')
 })
   
 productRouter.get('/:productId', function(req,res) {
     productsApi.getProduct(req.params.productId).then(product => {
-        res.render('singleProduct', {product})
+        res.render('products/singleProduct', {product})
     })
 })
 
 productRouter.get('/:productId/edit', function(req,res){
   productsApi.getProduct(req.params.productId)
   .then(product => {
-      res.render('editProductForm', {product})
+      res.render('products/editProductForm', {product})
     })
 })
 
