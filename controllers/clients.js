@@ -1,0 +1,56 @@
+const express = require ('express')
+const clientsApi = require ('../models/clients.js')
+const clientRouter = express.Router()
+
+
+clientRouter.get('/', function(req, res) {
+    clientsApi.getClients()
+      .then(clients => {
+        res.render('allClients', {clients})
+        
+      })
+  })
+
+
+clientRouter.get('/new', function(req, res) {
+      res.render('createClient')
+})
+  
+clientRouter.get('/:clientId', function(req,res) {
+    clientsApi.getClient(req.params.clientId).then(client => {
+        res.render('singleClient', {client})
+    })
+})
+
+clientRouter.get('/:clientId/edit', function(req,res){
+  clientsApi.getClient(req.params.clientId)
+  .then(client => {
+      res.render('editClientForm', {client})
+    })
+})
+
+
+  clientRouter.post('/', function(req, res){
+    clientsApi.addClient(req.body)
+      .then((addClient) => {
+        res.redirect('/clients/')
+      })
+  })
+
+  clientRouter.put('/:clientId', function(req,res){
+    clientsApi.updateClient(req.params.clientId, req.body)
+      .then(() => {
+        res.redirect('/clients/')
+      })
+  })
+
+  clientRouter.delete('/:clientId', function(req,res){
+    clientsApi.deleteClient(req.params.clientId)
+      .then((deletedClient) => {
+        res.redirect('/clients/')
+      })
+  })
+  
+  module.exports = {
+      clientRouter
+  }
