@@ -26,9 +26,8 @@ const getStore = (id) => { return StoreCollection.findById(id) }
 const addStore = (storeNew) => { return StoreCollection.insertMany([storeNew]) }
 
 const updateStore = (id, store) => {
-    return StoreCollection.findByIdAndUpdate( id, store)
-}
-
+    return StoreCollection.findByIdAndUpdate( id, store)}
+    
 const deleteStore = (id) => { return StoreCollection.findByIdAndDelete(id) }
 
 module.exports = {

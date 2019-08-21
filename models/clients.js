@@ -17,7 +17,7 @@ const createClient = () => {
         Address: "432 Ponce de Leon Ave",
         Age: 32,
         Purchase: "Camera",
-        Date: New Date()
+        Date: new Date()
     })
 }
 
@@ -25,7 +25,7 @@ const getClients = () => { return ClientCollection.find() }
 
 const getClient = (id) => { return ClientCollection.findById(id) }
 
-const addClient = (ClientNew) => { return ClientCollection.insertMany([clientNew]) }
+const addClient = (clientNew) => { return ClientCollection.insertMany([clientNew]) }
 
 const updateClient = (id, client) => {
     return ClientCollection.findByIdAndUpdate( id, client)

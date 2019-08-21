@@ -6,7 +6,7 @@ const ProductSchema = mongoose.Schema(
         price: Number,
         brand: String,
         model: String,
-        new: Boolean
+        condition: Boolean
     })
 
 const ProductCollection = mongoose.model('Product', ProductSchema)
@@ -17,7 +17,7 @@ const createProduct = () => {
         price: 300,
         brand: Canon,
         model: 3453C002,
-        new: true
+        condition: true
     })
 }
 

@@ -1,0 +1,12 @@
+<h2>All Clients</h2>
+ <a href='/clients/new'>Create new client form</a>
+
+<ul> 
+    {{#each clients}}
+    <li>
+  
+     <a href="/clients/{{_id}}">{{name}}</a>
+   
+    </li>
+    {{/each}}
+</ul>

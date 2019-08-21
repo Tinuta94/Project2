@@ -10,7 +10,7 @@ const hbs = require('hbs')
  *
  */
 const { storeRouter } = require('./controllers/stores.js') //NEED TO UPDATE FROM TINA'S
-
+const { clientRouter } = require('./controllers/clients.js')
 
 /* Step 3
  * Register middleware...
@@ -51,6 +51,7 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/stores', storeRouter)
+app.use('/clients', clientRouter)
 
 
 /* Step 5

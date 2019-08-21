@@ -1,0 +1,18 @@
+<form method="POST" action="/clients/{{client._id}}?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{client.name}}"/>
+
+    <label>Address</label>
+    <input type="text" name="Address" value="{{client.Address}}"/>
+
+    <label>Age</label>
+    <input type="number" name="Age" value="{{client.Age}}"/>
+
+    <label>Purchase</label>
+    <input type="text" name="Purchase" value="{{client.Purchase}}"/>
+     
+    <label>Date</label>
+    <input type="date" name="Date" value="{{client.Date}}"/>
+
+     <input type="submit" value="Submit changes"/>
+</form>

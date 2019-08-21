@@ -1,0 +1,12 @@
+<h2>All Stores</h2>
+ <a href='/stores/new'>Create new store</a>
+
+<ul> 
+    {{#each stores}}
+    <li>
+  
+     <a href="/stores/{{_id}}">{{name}}</a>
+   
+    </li>
+    {{/each}}
+</ul>

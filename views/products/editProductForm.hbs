@@ -1,0 +1,21 @@
+<form method="POST" action="/products/{{product._id}}?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{product.name}}"/>
+     
+    <label>Price</label>
+    <input type="text" name="price" value="{{product.price}}"/>
+
+    <label>Brand</label>
+    <input type="text" name="brand" value="{{product.brand}}"/>
+
+    <label>Model</label>
+    <input type="text" name="model" value="{{product.model}}"/>
+
+    <label>Condition</label>
+    <input type="checkbox"  name="condition" value="{{product.condition}}"/>
+    {{#if singleProduct.condition}} checked {{/if}}/>
+    
+    
+
+     <input type="submit" value="Submit changes"/>
+</form>
