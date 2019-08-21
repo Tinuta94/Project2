@@ -1,0 +1,12 @@
+<div>
+    <p>name: {{product.name}}</p>
+    <p>price: {{product.price}}</p>
+    <p>brand: {{product.brand}}</p>
+    <p>condition: {{#if product.condition}} New {{else}} Used {{/if}}</p>
+</div>
+
+ <a href="/products/{{product._id}}/edit">Edit Product</a>
+<form method="POST" action="/products/{{product._id}}?_method=DELETE">
+ 
+    <input type="submit" value="Delete product"/>
+</form>
