@@ -1,3 +1,4 @@
+<a href="/stores/{{store._id}}/edit">Edit Store</a>
 <div>
     <p>name: {{store.name}}</p>
     <p>Address: {{store.Address}}</p>
@@ -5,8 +6,6 @@
     <p>phoneNumber: {{store.phoneNumber}}</p>
 </div>
 
- <a href="/stores/{{store._id}}/edit">Edit Store</a>
 <form method="POST" action="/stores/{{store._id}}?_method=DELETE">
- 
     <input type="submit" value="Delete store"/>
 </form>

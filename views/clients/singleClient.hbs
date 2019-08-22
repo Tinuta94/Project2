@@ -1,3 +1,4 @@
+<a href="/clients/{{client._id}}/edit">Edit</a>
 <div>
     <p>name: {{client.name}}</p>
     <p>Address: {{client.Address}}</p>
@@ -6,7 +7,6 @@
     <p>Date: {{client.Date}}</p>
 </div>
 
- <a href="/clients/{{client._id}}/edit">Edit</a>
 <form method="POST" action="/clients/{{client._id}}?_method=DELETE">
     <input type="submit" value="Delete Client"/>
 </form>
