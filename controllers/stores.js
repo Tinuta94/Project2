@@ -33,21 +33,21 @@ storeRouter.get('/:storeId/edit', function (req, res) {
 storeRouter.post('/', function (req, res) {
     storesApi.addStore(req.body)
         .then((addStore) => {
-            res.redirect('/stores/')
+            res.redirect('/homeScreen/')
         })
 })
 
 storeRouter.put('/:storeId', function (req, res) {
     storesApi.updateStore(req.params.storeId, req.body)
         .then(() => {
-            res.redirect('/stores/')
+            res.redirect('/homeScreen/')
         })
 })
 
 storeRouter.delete('/:storeId', function (req, res) {
     storesApi.deleteStore(req.params.storeId)
         .then((deletedStore) => {
-            res.redirect('/stores/')
+            res.redirect('/homeScreen/')
         })
 })
 
