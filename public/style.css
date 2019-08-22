@@ -1,0 +1,76 @@
+body, html {
+    background: url("http://all4desktop.com/data_images/original/4175414-cool-blue.jpg");
+    background-size: cover;
+}
+h1 {
+    color: Brown;
+    margin: 20px 0 30px 630px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px
+
+}
+h2 {
+    color: blue;
+    font-size: 50px;
+    margin: 10px 0 0 600px
+}
+h3 {
+    color: white;
+    font-size: 35px
+}
+p {
+    color: white;
+    font-size: 25px
+}
+a {
+    color: white;
+    font-size: 35px;  
+}
+a:hover {
+    color: red
+}
+li
+.pr {
+    
+    margin: 0 10px 0 310px ;
+    color: brown
+}
+.list3 {
+    margin: -90px 0 0 1060px;
+    
+}
+.cl {
+     justify-content: center;
+     margin-left: 320px;
+     margin-right: 10px;
+     color: brown
+}
+.list2 {
+    margin-left: 530px;
+    margin-top: -30px;
+    
+}
+.st {
+    margin: 0 10px 0 50px;
+    color: brown
+}
+.list1 {
+    margin: 0 0 0 10px;
+    color: black
+}
+.naame {
+    color:blue;
+    font-size: 50px
+}
+.back {
+    color: white;
+    float: right;
+    margin: -180px 0 0 0;
+    font-size: 30px
+}
+
+
+.link {
+    font-size: 20px
+    
+}

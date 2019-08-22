@@ -1,8 +1,41 @@
-<h1>Home</h1>
+<h1>Database</h1>
 
-<a href='/stores'>All Stores</a>
+<a class="st" href='/stores'>All Stores</a>
+<a class="link" href='/stores/new'>New</a>
  
-<a href='/clients'>All Clients</a>
+<a class="cl" href='/clients'>All Clients</a>
+<a class="link" href='/clients/new'>New</a>
 
-<a href='/products'>All Products</a>
+<a class="pr" href='/products'>All Products</a>
+<a class="link" href='/products/new'>New</a><br></br>
+
+<ul class="list1"> 
+    {{#each stores}}
+    <li>
+  
+     <a href="/stores/{{_id}}">{{name}}</a>
+   
+    </li>
+    {{/each}}
+</ul>
+
+<ul class="list2"> 
+    {{#each clients}}
+    <li>
+  
+     <a href="/clients/{{_id}}">{{name}}</a>
+   
+    </li>
+    {{/each}}
+</ul>
  
+
+ <ul class="list3"> 
+    {{#each products}}
+    <li>
+  
+     <a href="/products/{{_id}}">{{name}}</a>
+   
+    </li>
+    {{/each}}
+</ul>

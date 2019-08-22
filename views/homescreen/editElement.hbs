@@ -1,0 +1,12 @@
+<form method="POST" action="/homeScreen/{{homescreen._id}}?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{product.name}}"/>
+     
+    <label>Price</label>
+    <input type="text" name="price" value="{{product.price}}"/>
+
+    <label>Brand</label>
+    <input type="text" name="brand" value="{{product.brand}}"/>
+
+     <input type="submit" value="Submit changes"/>
+</form>

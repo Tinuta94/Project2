@@ -18,6 +18,4 @@ homeScreenRouter.get('/', (req, res) => {
                 })
         })
     })
-    module.exports = {
-        homeScreenRouter
-    }
+    
