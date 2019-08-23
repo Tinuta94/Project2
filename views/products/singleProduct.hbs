@@ -1,12 +1,18 @@
- <a href="/products/{{product._id}}/edit">Edit Product</a>
-<div>
+  <a class="back" href="/homeScreen">⇐ Go Back</a><br></br><br></br>
+<div class="single">
+    <div class="nm">
     <p>name: {{product.name}}</p>
+    </div>
+    <div class="adr">
     <p>price: {{product.price}}</p>
+    </div>
+    <div class="current">
     <p>brand: {{product.brand}}</p>
 </div>
-
-<form method="POST" action="/homeScreen?_method=DELETE">
- 
-    <input type="submit" value="Delete product"/>
+</div>
+<div class="two">
+<a id="edit" href="/products/{{product._id}}/edit">Edit</a>
+<form method="POST" action="/homeScreen/{{product._id}}?_method=DELETE">
+  <input type="submit" value="Delete product " id="but"/>
 </form>
-<a class="back" href="/homeScreen/">⇐ Go Back</a>
+</div>

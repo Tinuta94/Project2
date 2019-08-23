@@ -5,7 +5,7 @@ const StoreSchema = mongoose.Schema(
        name: String,
        Address: String,
        currentlyOpen: Boolean,
-       phoneNumber: Number
+       phoneNumber: String
     })
 
 const StoreCollection = mongoose.model('Store', StoreSchema)
@@ -15,7 +15,7 @@ const createStore = () => {
         name: "Best Buy",
         Address: "1210 Caroline St NE",
         currentlyOpen: true,
-        phoneNumber: 234567321
+        phoneNumber: 206-519-2635
     })
 }
 
@@ -27,7 +27,7 @@ const addStore = (storeNew) => { return StoreCollection.insertMany([storeNew]) }
 
 const updateStore = (id, store) => {
     return StoreCollection.findByIdAndUpdate( id, store)}
-    
+
 const deleteStore = (id) => { return StoreCollection.findByIdAndDelete(id) }
 
 module.exports = {

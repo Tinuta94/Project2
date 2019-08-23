@@ -81,10 +81,11 @@ a:hover {
 }
 .nm, .adr, .phone, .current {
     border: 5px solid white;
-    width: 350px;
+    width: 450px;
     height: 120px;
     text-align: center;
-    background-color: black
+    background-color: black;
+    width: 550px
    
 }
 .back {
@@ -155,7 +156,8 @@ a:hover {
     font-size: 30px;
     color: white;
     background-color: black;
-    margin-top: 10px
+    margin-top: 10px;
+    width: 500px
 }
 
 #cr {
@@ -168,5 +170,5 @@ a:hover {
     text-align: center
 }
 #fp {
-    
+
 }

@@ -1,12 +1,29 @@
-<a href="/clients/{{client._id}}/edit">Edit</a>
-<div>
+
+ <a class="back" href="/homeScreen">⇐ Go Back</a><br></br><br></br>
+<div class="single">
+    <div class="nm">
     <p>Name: {{client.name}}</p>
+    </div>
+
+    <div class="current">
     <p>Address: {{client.Address}}</p>
+    </div>
+
+    <div class="adr">
     <p>Age: {{client.Age}}</p>
+    </div>
+
+    <div class="adr">
     <p>Purchase: {{client.Purchase}}</p>
+    </div>
+
+    <div class="adr">
     <p>Date: {{client.Date}}</p>
 </div>
-
+</div>
+<div class="two">
+<a class="edit" href="/clients/{{client._id}}/edit">Edit</a>
 <form method="POST" action="/clients/{{client._id}}?_method=DELETE">
-    <input type="submit" value="Delete Client"/>
+    <input type="submit" value="Delete Client" id="but/>
 </form>
+</div>

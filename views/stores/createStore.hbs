@@ -4,12 +4,12 @@
 
          <div class="nme">
     <label for="name">Name</label>
-     <input class="w3-input" type="text" id="n1"/>
+     <input class="w3-input" type="text" id="n1" placeholder="e.g. George Collins"/>
      </div>
 
      <div class="adres">
     <label>Address</label>
-     <input class="w3-input" type="text" name="Address"/>
+     <input class="w3-input" type="text" name="Address" placeholder="Address, city, state, ZIP code"/>
      </div>
 
      {{!-- <div class="box">
@@ -19,7 +19,7 @@
 
      <div class="number">
     <label>Phone Number</label>
-     <input class="w3-input" type="text" name="phoneNumber" id="pr"/>
+     <input class="w3-input" type="Tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneNumber" id="pr" placeholder="XXX-XXX-XXXX"/>
      </div>
 
     <input type="submit" value="Create Store" id="cr"/>
