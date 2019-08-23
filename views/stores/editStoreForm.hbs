@@ -1,26 +1,25 @@
+<a class="back" href="/stores/{{store._id}}">⇐ Go Back</a><br></br>
 <form method="POST" action="/stores/{{store._id}}?_method=PUT">
 <div class="input">
 
     <div class="nume">
     <label for="name">Name</label>
-    <input type="text" name="name" value="{{store.name}}" id="name1"/>
+     <input class="w3-input" type="text" value="{{store.name}}" id="name1"/>
      </div>
-
      <div class="adresa">
     <label>Address</label>
-    <input type="text" name="Address" value="{{store.Address}}" id="name1"/>
+    <input class="w3-input" name="Address" value="{{store.Address}}" id="name1"/>
     </div>
 
     <div class="deschis">
     <label>Currently Open</label>
-    <input type="checkbox"  name="currentlyOpen" value="true" id="name2"
-    {{#if singleStore.currentlyOpen}} checked {{/if}}/>
+    <input class="w3-input" type="checkbox"  name="currentlyOpen" value="true" id="name1"{{#if singleStore.currentlyOpen}} checked {{/if}}/> 
     </div>
-    
-    <div class="tel">
+
+     <div class="tel">
     <label>Phone Number</label>
-    <input type="number" name="phoneNumber" value="{{store.phoneNumber}}" id="name1"/>
+    <input class="w3-input" name="phoneNumber" value="{{store.phoneNumber}}" id="name1"/>
     </div>
-    <input type="submit" value="Submit changes"/>
+    <input type="submit" value="Submit changes" id="change"/>
 </form>
 </div>

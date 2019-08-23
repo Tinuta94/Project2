@@ -1,16 +1,28 @@
+ <a class="back" href="/homeScreen">⇐ Go Back</a><br>
 <form method="POST" action="/stores">
+     <div class="createcont">
+
+         <div class="nme">
     <label for="name">Name</label>
-    <input type="text" name="name" id="n1"/>
+     <input class="w3-input" type="text" id="n1"/>
+     </div>
 
+     <div class="adres">
     <label>Address</label>
-    <input type="text" name="Address"/>
+     <input class="w3-input" type="text" name="Address"/>
+     </div>
 
+     {{!-- <div class="box">
     <label>Currently Open</label>
     <input type="checkbox"  name="currentlyOpen" value="true"/>
+     </div> --}}
 
+     <div class="number">
     <label>Phone Number</label>
-    <input type="number" name="phoneNumber" id="pr"/>
+     <input class="w3-input" type="text" name="phoneNumber" id="pr"/>
+     </div>
 
     <input type="submit" value="Create Store" id="cr"/>
   
 </form>
+</div>
