@@ -3,12 +3,10 @@ body, html {
     background-size: cover;
 }
 h1 {
-    color: Brown;
-    margin: 20px 0 30px 630px;
+    color: white;
+    margin: 7px 0 30px 630px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    
-
+    font-size: 40px
 }
 h2 {
     color: blue;
@@ -32,9 +30,7 @@ a:hover {
 }
 .h {
     border: 5px solid white;
-    height: 60px;
-    text-align: center;
-    justify-content: center
+    height: 60px
 }
 
 .container {
@@ -54,7 +50,8 @@ a:hover {
     border: 10px solid white;
     opacity: .8;
     height: 450px;
-    width: 400px
+    width: 400px;
+    color: chocolate
 
 }
 .footer {
@@ -70,3 +67,52 @@ a:hover {
     text-align: center
 }
 
+.single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px
+    
+}
+.nm, .adr, .phone, .current {
+    border: 5px solid white;
+    width: 300px;
+    height: 90px;
+    text-align: center
+   
+}
+.back {
+    float: right;
+
+
+}
+/* #edit {
+    
+    margin-left: 650px;
+    font-size: 25px
+}
+#but {
+    margin-left: 750px;
+    margin-top: 20px;
+    width: 100px;
+    height: 60px;
+    font-size: 50px
+} */
+.two {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-left: 580px;
+    margin-top: 10px
+    
+}
+#edit {
+    font-size:25px;
+    margin-right: 50px
+}
+#but {
+    font-size: 25px;
+    margin-top: 7px
+}

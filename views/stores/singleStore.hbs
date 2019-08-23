@@ -1,12 +1,23 @@
-<a href="/stores/{{store._id}}/edit">Edit Store</a>
-<div>
+ <a class="back" href="/homeScreen">⇐ Go Back</a><br></br><br></br>
+ 
+<div class="single">
+    <div class="nm">
     <p>name: {{store.name}}</p>
-    <p>Address: {{store.Address}}</p>
+    </div>
+    <div class="adr">
+  <p>Address: {{store.Address}}</p>
+    </div>
+    <div class="current">
     <p>currentlyOpen: {{#if store.currentlyOpen}} Open {{else}} Closed {{/if}}</p>
+    </div>
+    <div class="phone">
     <p>phoneNumber: {{store.phoneNumber}}</p>
+    </div>
+</div>
+<div class="two">
+<a id="edit" href="/stores/{{store._id}}/edit">Edit Store</a>
+<form method="POST" action="/stores/{{store._id}}?_method=DELETE">
+    <input type="submit" value="Delete store" id="but"/>
+    </form>
 </div>
 
-<form method="POST" action="/stores/{{store._id}}?_method=DELETE">
-    <input type="submit" value="Delete store"/>
-</form>
-<a class="back" href="/homeScreen">⇐ Go Back</a>
