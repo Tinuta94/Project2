@@ -4,9 +4,11 @@
 
 <div class="container">
     <div class="first">
+         <div class="txt">
         <label class="st">All Stores</label>
         <a class="link" href='/stores/new'>New</a><br></br>
-        <ul class="list1">
+        </div>
+        <ul>
             {{#each stores}}
             <li>
                 <a href="/stores/{{_id}}">{{name}}</a>
@@ -16,9 +18,11 @@
     </div>
 
     <div class="second">
+         <div class="txt">
         <label class="cl">All Clients</label>
         <a class="link" href='/clients/new'>New</a><br></br>
-        <ul class="list2">
+         </div>
+        <ul>
             {{#each clients}}
             <li>
                 <a href="/clients/{{_id}}">{{name}}</a>
@@ -30,13 +34,15 @@
     </div>
 
     <div class="third">
-        <label class="pr">All Products</label>
-        <a class="link" href='/products/new'>New</a><br></br>
-        <ul class="list3">
+        <div class="txt">
+        <label>All Products</label>
+        <a href='/products/new'>New</a><br></br>
+        </div>
+        <ul>
             {{#each products}}
             <li>
 
-                <a href="/products/{{_id}}">{{name}}</a>
+                <a class="list1" href="/products/{{_id}}">{{name}}</a>
 
             </li>
             {{/each}}

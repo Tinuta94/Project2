@@ -1,5 +1,5 @@
 body, html {
-    background: url("http://all4desktop.com/data_images/original/4175414-cool-blue.jpg");
+    background: url("https://images4.alphacoders.com/839/83944.jpg");
     background-size: cover;
 }
 h1 {
@@ -31,14 +31,17 @@ a:hover {
     color: red
 }
 .h {
-    background-color: burlywood;
-    height: 60px
+    border: 5px solid white;
+    height: 60px;
+    text-align: center;
+    justify-content: center
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    align-items: center;
     flex-flow: row wrap;
     margin-top: 40px;
     
@@ -47,16 +50,23 @@ a:hover {
 }
 .first, .second, .third {
     font-size: 40px;
-    background-color: rosybrown;
-    width: 350px
+    justify-content: center;
+    border: 10px solid white;
+    opacity: .8;
+    height: 450px;
+    width: 400px
+
 }
 .footer {
-    background-color: burlywood;
+    border: 5px solid white;
     text-align: center;
-    float: inline-end;
     font-size: 25px;
-    margin-top: 270px
+    margin-top: 50px;
+    color: white
 
 
+}
+.txt {
+    text-align: center
 }
 
