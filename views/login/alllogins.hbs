@@ -1,12 +1,23 @@
 <form method="POST" action="/login">
+<p class="company">Galaxy Company</p>
     <h1 id="log">Log in</h1>
     <div class="fp">
-        <label>Username:</label>
-        <input type="text" name="name">
+        <div class="user">
+        <label>Username</label>
+        </div>
+        <div clas="inname">
+        <input type="text" name="name" placeholder="first and last name">
     </div>
-    <label>Password (4 characters maximum):</label>
-    <input type="password" name="password" maxlength="4" required>
 
+    <div class="pass">
+    <label>Password</label>
+    </div>
+    <div class="passwrd">
+    <input type="password" name="password" maxlength="4" required placeholder="4 digit number">
+    </div>
     <input type="submit" value="Log in" id="newb">
 </form>
+</div>
+<div class="footer">
+    <label>© 2019 Galaxy Company</label>
 </div>
