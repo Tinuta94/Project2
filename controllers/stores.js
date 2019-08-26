@@ -38,6 +38,7 @@ storeRouter.post('/', function (req, res) {
 })
 
 storeRouter.put('/:storeId', function (req, res) {
+    
     storesApi.updateStore(req.params.storeId, req.body)
         .then(() => {
             res.redirect('/homeScreen/')

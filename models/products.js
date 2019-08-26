@@ -12,10 +12,10 @@ const ProductCollection = mongoose.model('Product', ProductSchema)
 
 const createProduct = () => {
     return ProductCollection.create({
-        name: Camera,
+        name: "Camera",
         price: 300,
-        brand: Canon,
-        Purchase:454rgfgg
+        brand: "Canon",
+        Purchase:"454rgfgg"
     })
 }
 

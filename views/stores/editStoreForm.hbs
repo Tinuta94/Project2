@@ -11,9 +11,9 @@
     <input class="w3-input" name="Address" placeholder="Address,city,state,ZIP code" value="{{store.Address}}" id="name1"/>
     </div>
 
-    <div class="deschis">
+    <div class="box">
     <label>Currently Open</label>
-    <input class="w3-input" type="checkbox"  name="currentlyOpen" value="true" id="name1"{{#if singleStore.currentlyOpen}} checked {{/if}}/> 
+    <input class="w3-input" type="checkbox"  name="currentlyOpen"  id="name1" value="true" {{#if store.currentlyOpen}} checked {{/if}}/> 
     </div>
 
      <div class="tel">
