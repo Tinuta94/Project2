@@ -1,22 +1,36 @@
+<a class="back" href="/clients/{{client._id}}">⇐ Go Back</a><br></br>
 <form method="POST" action="/clients/{{client._id}}?_method=PUT">
-    <label class="naame">Name</label>
-    <input type="text" name="name" value="{{client.name}}"/><br></br>
+    <div class="input">
 
-    <label class="naame">Address</label>
-    <input type="text" name="Address" value="{{client.Address}}"/><br></br>
+        <div class="nume">
+            <label class="naame">Name</label>
+            <input class="w3-input" placeholder="e.g.George Collins" type="text" name="name"
+                value="{{client.name}}" /><br></br>
+        </div>
+
+        <div class="nume">
+        <label class="naame">Address</label>
+        <input class="w3-input" type="text" name="Address" placeholder="Addres,city,state,ZIp code"
+            value="{{client.Address}}" /><br></br>
+    </div>
 
     {{!-- <label class="naame">Age</label>
     <input type="number" name="Age" value="{{client.Age}}"/><br></br> --}}
+    <div class="adresa">
+        <label class="naame">Store Name</label>
+        <input class="w3-input" placeholder="e.g.Best Buy" type="text" name="storeName"
+            value="{{client.storename}}" /><br></br>
+    </div>
 
-     <label class="naame">Store Name</label>
-    <input type="text" name="storeName" value="{{client.storename}}"/><br></br>
-
-
-    <label class="naame">Purchase</label>
-    <input type="text" name="Purchase" value="{{client.Purchase}}"/><br></br>
-     
-    <label clas="naame">Date</label>
-    <input type="date" name="Date" value="{{client.Date}}"/><br></br>
-
-     <input class="" type="submit" value="Submit changes"/>
+    <div class="nume">
+        <label class="naame">Purchase</label>
+        <input class="w3-input" placeholder="e.g.05669tkgj66" type="text" name="Purchase"
+            value="{{client.Purchase}}" /><br></br>
+    </div>
+    <div class="adresa">
+        <label clas="naame">Date</label>
+        <input class="w3-input" placeholder="mm/dd/yyyy" type="date" name="Date" value="{{client.Date}}" /><br></br>
+    </div>
+    <input type="submit" value="Submit changes" id="change" />
 </form>
+</div>
