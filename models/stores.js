@@ -26,15 +26,11 @@ const getStore = (id) => { return StoreCollection.findById(id) }
 const addStore = (storeNew) => { return StoreCollection.insertMany([storeNew]) }
 
 const updateStore = (id, store) => {
-    console.log("raw store", store)
-
     if(store.currentlyOpen === 'true') {
        store.currentlyOpen = true;
     } else {
         store.currentlyOpen = false;
     }
-    
-    console.log('updateStore - store', store)
     return StoreCollection.findByIdAndUpdate( id, store)
 }
 
