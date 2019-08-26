@@ -4,17 +4,17 @@
 
     <div class="nume">
     <label for="name">Name</label>
-     <input class="w3-input" type="text" value="{{store.name}}" id="name1"/>
+     <input class="w3-input" name="name" placeholder="e.g.Best Buy" type="text" value="{{store.name}}" id="name1"/>
      </div>
      <div class="adresa">
     <label>Address</label>
-    <input class="w3-input" name="Address" value="{{store.Address}}" id="name1"/>
+    <input class="w3-input" name="Address" placeholder="Address,city,state,ZIP code" value="{{store.Address}}" id="name1"/>
     </div>
 
-    {{!-- <div class="deschis">
+    <div class="deschis">
     <label>Currently Open</label>
     <input class="w3-input" type="checkbox"  name="currentlyOpen" value="true" id="name1"{{#if singleStore.currentlyOpen}} checked {{/if}}/> 
-    </div> --}}
+    </div>
 
      <div class="tel">
     <label>Phone Number</label>

@@ -1,14 +1,18 @@
+ <a class="back" href="/homeScreen">⇐ Go Back</a><br>
 <form method="POST" action="/products">
-    <label class="naame">Name</label>
-    <input type="text" name="name"/>
-
+<div class="createcont">
+    <div class="nme">
+    <label>Name</label>
+    <input class="w3-input" name="name" type="text" id="n1" placeholder="e.g.camera"/>
+    </div>
+    <div class="adres">
     <label>Price</label>
-    <input type="number" name="price"/>
-
+    <input class="w3-input" name="price" type="number" placeholder="enter price"/>
+    </div>
+    <div class="number">
     <label>Brand</label>
-    <input type="text"  name="brand"/>
-
+    <input class="w3-input" type="text" name="brand" placeholder="e.g.Canon" />
+     </div>
     <input type="submit" value="Create Product" id="cr"/>
-  
 </form>
-<a class="back" href="/products">⇐ Go Back</a>
+</div>

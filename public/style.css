@@ -114,7 +114,8 @@ a:hover {
     align-content: center;
     font-size: 30px;
     background-color: white;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 500px
 }
 
 .input {
@@ -206,6 +207,6 @@ a:hover {
     background-color: brown;
     text-align: center;
     font-size: 25px;
-    margin-top: 210px;
+    margin-top: 140px;
     color: black
 }

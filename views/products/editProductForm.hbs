@@ -1,12 +1,18 @@
+<a class="back" href="/products/{{product._id}}">⇐ Go Back</a><br></br>
 <form method="POST" action="/products/{{product._id}}?_method=PUT">
+    <div class="input">
+        <div class="nume">
     <label for="name">Name</label>
-    <input type="text" name="name" value="{{product.name}}"/>
-     
+    <input class="w3-input" type="text" name="name" id="name1" placeholder="e.g.Camera" value="{{product.name}}" id="name1"/>
+     </div>   
+     <div class="nume">
     <label>Price</label>
-    <input type="text" name="price" value="{{product.price}}"/>
-
+    <input class="w3-input" placeholder="enter price"type="text" name="price" value="{{product.price}}" id="name1"/>
+    </div>
+    <div class="nume">
     <label>Brand</label>
-    <input type="text" name="brand" value="{{product.brand}}"/>
-
-     <input type="submit" value="Submit changes"/>
+    <input class="w3-input" placeholder="e.g.Canon" type="text" name="brand" value="{{product.brand}}" id="name1"/>
+    </div>
+     <input type="submit" value="Submit changes" id="change"/>
 </form>
+</div>

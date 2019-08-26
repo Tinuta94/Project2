@@ -9,9 +9,15 @@
     <p>Address: {{client.Address}}</p>
     </div>
 
-    <div class="adr">
+    {{!-- <div class="adr">
     <p>Age: {{client.Age}}</p>
+    </div> --}}
+
+
+    <div class="adr">
+    <p>Store Name: {{client.storeName}}</p>
     </div>
+
 
     <div class="adr">
     <p>Purchase: {{client.Purchase}}</p>
@@ -24,6 +30,6 @@
 <div class="two">
 <a class="edit" href="/clients/{{client._id}}/edit">Edit</a>
 <form method="POST" action="/clients/{{client._id}}?_method=DELETE">
-    <input type="submit" value="Delete Client" id="but/>
+    <input type="submit" value="Delete Client" id="but"/>
 </form>
 </div>

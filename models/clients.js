@@ -5,6 +5,7 @@ const ClientSchema = mongoose.Schema(
         name: String,
         Address: String,
         Age: Number,
+        storeName: String,
         Purchase: String,
         Date: Date
     })
@@ -16,6 +17,7 @@ const createClient = () => {
         name: "James Kim",
         Address: "432 Ponce de Leon Ave",
         Age: 32,
+        storeName: "BestBuy",
         Purchase: "Camera",
         Date: new Date()
     })
