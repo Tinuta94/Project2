@@ -15,7 +15,7 @@
 
 
     <div class="adr">
-    <p>Store Name: {{client.storeName}}</p>
+    <p>Store Name: {{client.StoreName}}</p>
     </div>
 
 
@@ -28,7 +28,7 @@
 </div>
 </div>
 <div class="two">
-<a class="edit" href="/clients/{{client._id}}/edit">Edit</a>
+<a id="edit" href="/clients/{{client._id}}/edit">Edit</a>
 <form method="POST" action="/clients/{{client._id}}?_method=DELETE">
     <input type="submit" value="Delete Client" id="but"/>
 </form>

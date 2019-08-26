@@ -3,34 +3,33 @@
     <div class="input">
 
         <div class="nume">
-            <label class="naame">Name</label>
-            <input class="w3-input" placeholder="e.g.George Collins" type="text" name="name"
-                value="{{client.name}}" /><br></br>
+            <label>Name</label>
+            <input class="w3-input" placeholder="e.g.George Collins" type="text" name="name" id="name1"
+                value="{{client.name}}"/>
         </div>
 
         <div class="nume">
-        <label class="naame">Address</label>
-        <input class="w3-input" type="text" name="Address" placeholder="Addres,city,state,ZIp code"
-            value="{{client.Address}}" /><br></br>
+        <label>Address</label>
+        <input class="w3-input" type="text" name="Address" placeholder="Addres,city,state,ZIp code" id="name1"
+            value="{{client.Address}}"/>
     </div>
 
     {{!-- <label class="naame">Age</label>
     <input type="number" name="Age" value="{{client.Age}}"/><br></br> --}}
     <div class="adresa">
-        <label class="naame">Store Name</label>
-        <input class="w3-input" placeholder="e.g.Best Buy" type="text" name="storeName"
-            value="{{client.storename}}" /><br></br>
+        <label>Store Name</label>
+        <input class="w3-input" placeholder="e.g.Best Buy" type="text" name="StoreName" value="{{client.StoreName}}" id="name1"/>
     </div>
 
     <div class="nume">
-        <label class="naame">Purchase</label>
-        <input class="w3-input" placeholder="e.g.05669tkgj66" type="text" name="Purchase"
-            value="{{client.Purchase}}" /><br></br>
+        <label>Product Id</label>
+        <input class="w3-input" placeholder="e.g.05669tkgj66" type="text" name="Purchase" id="name1"
+            value="{{client.Purchase}}"/>
     </div>
     <div class="adresa">
-        <label clas="naame">Date</label>
-        <input class="w3-input" placeholder="mm/dd/yyyy" type="date" name="Date" value="{{client.Date}}" /><br></br>
+        <label class="naame">Date</label>
+        <input class="w3-input" placeholder="mm/dd/yyyy" type="date" name="Date" value="{{client.Date}}" id="name1"/>
     </div>
-    <input type="submit" value="Submit changes" id="change" />
+    <input type="submit" value="Submit changes" id="change"/>
 </form>
 </div>

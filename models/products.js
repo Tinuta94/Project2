@@ -4,7 +4,8 @@ const ProductSchema = mongoose.Schema(
     {
         name: String,
         price: Number,
-        brand: String
+        brand: String,
+        Purchase:String
     })
 
 const ProductCollection = mongoose.model('Product', ProductSchema)
@@ -13,7 +14,8 @@ const createProduct = () => {
     return ProductCollection.create({
         name: Camera,
         price: 300,
-        brand: Canon
+        brand: Canon,
+        Purchase:454rgfgg
     })
 }
 
