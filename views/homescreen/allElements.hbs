@@ -3,56 +3,56 @@
     <a class="logout" href="/login">Log Out</a>
 </div>
 <div class="allhome">
-<div class="container">
-    <div class="first">
-         <div class="txt">
-        <label>All Stores</label>
-        <a class="items" href='/stores/new'>New</a><br></br>
+    <div class="container">
+        <div class="first">
+            <div class="txt">
+                <label>All Stores</label>
+                <a class="items" href='/stores/new'>New</a><br></br>
+            </div>
+            <ul class="lisst">
+                {{#each stores}}
+                <li>
+                    <a class="items" href="/stores/{{_id}}">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
         </div>
-        <ul class="lisst">
-            {{#each stores}}
-            <li>
-                <a class="items" href="/stores/{{_id}}">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
-    </div>
 
-    <div class="second">
-         <div class="txt">
-        <label>All Clients</label>
-        <a class="items" href='/clients/new'>New</a><br></br>
-         </div>
-        <ul class="lisst">
-            {{#each clients}}
-            <li>
-                <a class="items" href="/clients/{{_id}}">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
+        <div class="second">
+            <div class="txt">
+                <label>All Clients</label>
+                <a class="items" href='/clients/new'>New</a><br></br>
+            </div>
+            <ul class="lisst">
+                {{#each clients}}
+                <li>
+                    <a class="items" href="/clients/{{_id}}">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
 
 
-    </div>
-
-    <div class="third">
-        <div class="txt">
-        <label>All Products</label>
-        <a class="items" href='/products/new'>New</a><br></br>
         </div>
-        <ul class="lisst">
-            {{#each products}}
-            <li>
 
-                <a class="items" href="/products/{{_id}}">{{name}}</a>
+        <div class="third">
+            <div class="txt">
+                <label>All Products</label>
+                <a class="items" href='/products/new'>New</a><br></br>
+            </div>
+            <ul class="lisst">
+                {{#each products}}
+                <li>
 
-            </li>
-            {{/each}}
-        </ul>
+                    <a class="items" href="/products/{{_id}}">{{name}}</a>
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
     </div>
 
-</div>
-
-<div class="footer1">
-    <label>© 2019 Galaxy Company</label>
-</div>
+    <div class="footer1">
+        <label>© 2019 Galaxy Company</label>
+    </div>
 </div>

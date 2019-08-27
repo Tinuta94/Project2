@@ -1,35 +1,29 @@
-
- <a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
+<a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
 <div class="single">
     <div class="nm">
-    <p>Name: {{client.name}}</p>
+        <p>Name: {{client.name}}</p>
     </div>
 
     <div class="current">
-    <p>Address: {{client.Address}}</p>
+        <p>Address: {{client.Address}}</p>
     </div>
 
-    {{!-- <div class="adr">
-    <p>Age: {{client.Age}}</p>
-    </div> --}}
-
-   
     <div class="adr">
-    <p>Store Name: {{client.StoreName}}</p>
+        <p>Store Name: {{client.StoreName}}</p>
     </div>
 
 
     <div class="adr">
-    <p>Product ID: {{client.Purchase}}</p>
+        <p>Product ID: {{client.Purchase}}</p>
     </div>
 
     <div class="adr">
-    <p>Date: {{client.Date}}</p>
-</div>
+        <p>Date: {{client.Date}}</p>
+    </div>
 </div>
 <div class="two">
-<a id="edit" href="/clients/{{client._id}}/edit">Edit</a>
-<form method="POST" action="/clients/{{client._id}}?_method=DELETE">
-    <input type="submit" value="Delete Client" id="but"/>
-</form>
+    <a id="edit" href="/clients/{{client._id}}/edit">Edit</a>
+    <form method="POST" action="/clients/{{client._id}}?_method=DELETE">
+        <input type="submit" value="Delete Client" id="but" />
+    </form>
 </div>

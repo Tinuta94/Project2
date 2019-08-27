@@ -30,7 +30,7 @@ const getClient = (id) => { return ClientCollection.findById(id) }
 const addClient = (clientNew) => { return ClientCollection.insertMany([clientNew]) }
 
 const updateClient = (id, client) => {
-    return ClientCollection.findByIdAndUpdate( id, client)
+    return ClientCollection.findByIdAndUpdate(id, client)
 }
 
 const deleteClient = (id) => { return ClientCollection.findByIdAndDelete(id) }
