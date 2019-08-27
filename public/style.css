@@ -59,16 +59,20 @@ a:hover {
     background-color: brown;
     text-align: center;
     font-size: 25px;
-    margin-top: 140px;
+    margin-top: 190px;
     color: black
 
 
 }
 .txt {
     text-align: center;
+    margin-top: 60px;
     margin-bottom: -80px;
-    margin-left: -110px;
-    color: black
+    margin-left: -50px;
+    color: bisque;
+    border: 5px solid blanchedalmond;
+    width: 500px;
+    height: 100px
 }
 
 .single {
@@ -217,7 +221,7 @@ a:hover {
     font-family: 'Saira Stencil One', cursive;
 }
 .footer {
-    background-color: blue;
+    background-color: aqua;
     text-align: center;
     font-size: 25px;
 
@@ -226,8 +230,13 @@ a:hover {
 .items {
     width: 150px;
     height: 20px;
-    color:black;
-    background-color: burlywood
+    color:white
+    
+}
+.lisst {
+    margin-top: 130px;
+    border: 5px solid bisque;
+    background-color: brown
 }
 .bg {
     background-color: skyblue
@@ -242,4 +251,9 @@ a:hover {
     margin-top: -60px;
     height: 550px
     
+}
+.allhome {
+    background-image: url("https://cdn.csu.edu.au/__data/assets/image/0005/2869745/M_Management_IT_Banner_01.jpg");
+    margin-top: -40px;
+    height: 650px
 }

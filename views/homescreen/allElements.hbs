@@ -2,14 +2,14 @@
     <h1>Welcome to Galaxy</h1>
     <a class="logout" href="/login">Log Out</a>
 </div>
-
+<div class="allhome">
 <div class="container">
     <div class="first">
          <div class="txt">
         <label>All Stores</label>
         <a class="items" href='/stores/new'>New</a><br></br>
         </div>
-        <ul>
+        <ul class="lisst">
             {{#each stores}}
             <li>
                 <a class="items" href="/stores/{{_id}}">{{name}}</a>
@@ -23,7 +23,7 @@
         <label>All Clients</label>
         <a class="items" href='/clients/new'>New</a><br></br>
          </div>
-        <ul>
+        <ul class="lisst">
             {{#each clients}}
             <li>
                 <a class="items" href="/clients/{{_id}}">{{name}}</a>
@@ -39,7 +39,7 @@
         <label>All Products</label>
         <a class="items" href='/products/new'>New</a><br></br>
         </div>
-        <ul>
+        <ul class="lisst">
             {{#each products}}
             <li>
 
@@ -54,4 +54,5 @@
 
 <div class="footer1">
     <label>© 2019 Galaxy Company</label>
+</div>
 </div>
