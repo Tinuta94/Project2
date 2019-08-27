@@ -1,21 +1,21 @@
-  <a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
+<a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
 <div class="single">
-    <div class="nm">
+  <div class="nm">
     <p>Name: {{product.name}}</p>
-    </div>
-    <div class="adr">
+  </div>
+  <div class="adr">
     <p>Price: {{product.price}}</p>
-    </div>
-    <div class="current">
+  </div>
+  <div class="current">
     <p>Brand: {{product.brand}}</p>
-</div>
-<div class="adr">
-  <p>Product ID: {{product.Purchase}}</p>
+  </div>
+  <div class="adr">
+    <p>Product ID: {{product.Purchase}}</p>
   </div>
 </div>
 <div class="two">
-<a id="edit" href="/products/{{product._id}}/edit">Edit</a>
-<form method="POST" action="/products/{{product._id}}?_method=DELETE">
-  <input type="submit" value="Delete product" id="but"/>
-</form>
+  <a id="edit" href="/products/{{product._id}}/edit">Edit</a>
+  <form method="POST" action="/products/{{product._id}}?_method=DELETE">
+    <input type="submit" value="Delete product" id="but" />
+  </form>
 </div>

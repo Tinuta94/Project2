@@ -1,22 +1,21 @@
- <a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
+<a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br></br><br></br>
 <div class="single">
-    <div class="nm">
+  <div class="nm">
     <p>Name: {{store.name}}</p>
-    </div>
-    <div class="adr">
-  <p>Address: {{store.Address}}</p>
-    </div>
-    <div class="current">
-    <p>Currently Open: {{#if store.currentlyOpen}}  ✔️ {{else}} Closed {{/if}}</p>
-    </div>
-    <div class="phone">
+  </div>
+  <div class="adr">
+    <p>Address: {{store.Address}}</p>
+  </div>
+  <div class="current">
+    <p>Currently Open: {{#if store.currentlyOpen}} ✔️ {{else}} Closed {{/if}}</p>
+  </div>
+  <div class="phone">
     <p>Phone Number: {{store.phoneNumber}}</p>
-    </div>
+  </div>
 </div>
 <div class="two">
-<a id="edit" href="/stores/{{store._id}}/edit">Edit</a>
-<form method="POST" action="/stores/{{store._id}}?_method=DELETE">
-    <input type="submit" value="Delete store" id="but"/>
-    </form>
+  <a id="edit" href="/stores/{{store._id}}/edit">Edit</a>
+  <form method="POST" action="/stores/{{store._id}}?_method=DELETE">
+    <input type="submit" value="Delete store" id="but" />
+  </form>
 </div>
-

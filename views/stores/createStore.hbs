@@ -1,29 +1,30 @@
- <a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br>
+<a class="back" href="/homeScreen/${login._id}">⇐ Go Back</a><br>
 <form method="POST" action="/stores">
-     <div class="createcont">
+    <div class="createcont">
 
-         <div class="nme">
-    <label>Name</label>
-     <input class="w3-input" name="name" type="text" id="n1" placeholder="e.g. Best Buy"/>
-     </div>
+        <div class="nme">
+            <label>Name</label>
+            <input class="w3-input" name="name" type="text" id="n1" placeholder="e.g. Best Buy" />
+        </div>
 
-     <div class="adres">
-    <label>Address</label>
-     <input class="w3-input" type="text" name="Address" placeholder="Address, city, state, ZIP code"/>
-     </div>
+        <div class="adres">
+            <label>Address</label>
+            <input class="w3-input" type="text" name="Address" placeholder="Address, city, state, ZIP code" />
+        </div>
 
-     <div class="box">
-    <label>Currently Open</label>
-    <input type="checkbox"  name="currentlyOpen" value="true"/>
+        <div class="box">
+            <label>Currently Open</label>
+            <input type="checkbox" name="currentlyOpen" value="true" />
 
-     </div>
+        </div>
 
-     <div class="number">
-    <label>Phone Number</label>
-     <input class="w3-input" type="Tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneNumber" id="pr" placeholder="XXX-XXX-XXXX"/>
-     </div>
+        <div class="number">
+            <label>Phone Number</label>
+            <input class="w3-input" type="Tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneNumber" id="pr"
+                placeholder="XXX-XXX-XXXX" />
+        </div>
 
-    <input type="submit" value="Create Store" id="cr"/>
-  
+        <input type="submit" value="Create Store" id="cr" />
+
 </form>
 </div>

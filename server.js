@@ -13,7 +13,7 @@ const { storeRouter } = require('./controllers/stores.js') //NEED TO UPDATE FROM
 const { clientRouter } = require('./controllers/clients.js')
 const { productRouter } = require('./controllers/products.js')
 const { homeScreenRouter } = require('./controllers/homescreen.js')
-const { loginRouter} = require('./controllers/login.js')
+const { loginRouter } = require('./controllers/login.js')
 /* Step 3
  * Register middleware...
  */
@@ -38,7 +38,7 @@ app.use(methodOverride('_method'))
  * use the `./public` directory to host static resources such as css and
  * image files
  */
-app.use(express.static(__dirname+"/public"))
+app.use(express.static(__dirname + "/public"))
 
 /* Step 3.b
  *
