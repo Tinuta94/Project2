@@ -1,5 +1,5 @@
 # Project2
-#Galaxy
+# Galaxy
 
 Link: https://tinuta94.github.io/Project2/
 
