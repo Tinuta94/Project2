@@ -10,7 +10,7 @@ const LoginCollection = mongoose.model('Login', LoginSchema)
 
 const createLogin = () => {
     return LoginCollection.create({
-        name: "James Robert",
+        name: "Tina",
         password: 1111
     })
 }
@@ -25,6 +25,9 @@ const updateLogin = (id, login) => {
 
 const deleteLogin = (id) => { return LoginCollection.findByIdAndDelete(id) }
 
+const getLoginByPassword = (password) => {
+    return LoginCollection.findOne({ password })
+}
 
 module.exports = {
     createLogin,
@@ -32,5 +35,6 @@ module.exports = {
     getLogin,
     addLogin,
     updateLogin,
-    deleteLogin
+    deleteLogin,
+    getLoginByPassword
 }

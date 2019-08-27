@@ -16,7 +16,7 @@ h3 {
     font-size: 35px
 }
 p {
-    color: white;
+    color: black;
     font-size: 25px
 }
 a {
@@ -89,14 +89,14 @@ a:hover {
     width: 450px;
     height: 120px;
     text-align: center;
-    background-color: lightblue;
+    background-color: royalblue;
     width: 550px
     
    
 }
 .back {
     float: right;
-    color: white
+    color: black
 }
 
 .two {
@@ -110,7 +110,7 @@ a:hover {
 #edit {
     font-size:25px;
     margin-right: 50px;
-    color: white
+    color: black
 }
 #but {
     font-size: 15px;
@@ -119,10 +119,10 @@ a:hover {
 }
 
 .nume, .adresa, .tel, .deschis {
-    color: white;
+    color: black;
     align-content: center;
     font-size: 30px;
-    background-color: black;
+    background-color: royalblue;
     margin-top: 20px;
     width: 500px
 }
@@ -144,8 +144,8 @@ a:hover {
 #change {
     font-size: 30px;
     margin-top: 20px;
-    background-color: blue;
-    color: white
+    background-color: royalblue;
+    color: black
 }
 .createcont {
     display: flex;
@@ -156,10 +156,9 @@ a:hover {
     margin-top: 100px
 }
 .nme, .adres, .number, .box {
-    color: white;
+    color: black;
     align-content: center;
     font-size: 30px;
-    color: white;
     background-color: royalblue;
     margin-top: 10px;
     width: 500px
@@ -168,8 +167,8 @@ a:hover {
 #cr {
     font-size: 30px;
     margin-top: 20px;
-    background-color: purple;
-    color: white
+    background-color: royalblue;
+    color: black
 }
 #log {
     text-align: center;

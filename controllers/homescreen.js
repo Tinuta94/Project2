@@ -6,21 +6,16 @@ const loginsApi = require('../models/login.js')
 const homeScreenRouter = express.Router()
 
 // '/homeScreen/{{login.name}}' or homeScreen/login{{_id}}{{name}}  
-homeScreenRouter.get('/', (req, res) => {
-    loginsApi.getLogins(req.body.name)
-    .then(logins => {
-    storesApi.getStores()
-        .then(stores => {
-            clientsApi.getClients()
-                .then(clients => {
-                    productsApi.getProducts()
-                        .then(products => {
-                            res.render('homescreen/allElements', {stores, clients, products, logins})
-                        })
-                })
-        })
+homeScreenRouter.get('/:loginId', (req, res) => 
+    loginsApi.getLogin(req.params.loginId).then(login => 
+    storesApi.getStores().then(stores => 
+    clientsApi.getClients().then(clients => 
+    productsApi.getProducts().then(products => {
+        console.log(login)
+        res.render('homescreen/allElements', {stores, clients, products, login})
     })
-})
-    module.exports = {
-        homeScreenRouter
-    }
+))))
+
+module.exports = {
+    homeScreenRouter
+}
