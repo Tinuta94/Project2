@@ -5,7 +5,7 @@ const productsApi = require('../models/products.js')
 const loginsApi = require('../models/login.js')
 const homeScreenRouter = express.Router()
 
-// /homeScreen/{{login.name}}'         
+// '/homeScreen/{{login.name}}' or homeScreen/login{{_id}}{{name}}  
 homeScreenRouter.get('/', (req, res) => {
     loginsApi.getLogins(req.body.name)
     .then(logins => {

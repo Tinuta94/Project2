@@ -1,5 +1,5 @@
 body, html {
-    background: url("https://cdn.wallpapersafari.com/7/93/fpw8ao.jpg");
+    background: url("https://i.pinimg.com/originals/39/2d/67/392d675638b96f888aebf283910b3b50.jpg");
     background-size: cover;
 }
 h1 {
@@ -16,7 +16,7 @@ h3 {
     font-size: 35px
 }
 p {
-    color: black;
+    color: white;
     font-size: 25px
 }
 a {
@@ -85,18 +85,18 @@ a:hover {
     
 }
 .nm, .adr, .phone, .current {
-    border: 5px solid white;
+    border: 5px solid black;
     width: 450px;
     height: 120px;
     text-align: center;
-    background-color: royalblue;
-    width: 550px;
-    color: black
+    background-color: lightblue;
+    width: 550px
     
    
 }
 .back {
     float: right;
+    color: white
 }
 
 .two {
@@ -109,18 +109,20 @@ a:hover {
 }
 #edit {
     font-size:25px;
-    margin-right: 50px
+    margin-right: 50px;
+    color: white
 }
 #but {
     font-size: 15px;
-    margin-top: 7px
+    margin-top: 7px;
+    background-color: white
 }
 
 .nume, .adresa, .tel, .deschis {
-    color: black;
+    color: white;
     align-content: center;
     font-size: 30px;
-    background-color: white;
+    background-color: black;
     margin-top: 20px;
     width: 500px
 }
@@ -135,19 +137,14 @@ a:hover {
 }
 #name1 {
     font-size: 30px;
-    color: white;
-    background-color: black
+    color: black;
+    background-color: white
 }
-/* #name2 {
-    width: 50px;
-    height: 30px;
-    font-size : 30px;
-    background-color: black */
 
 #change {
     font-size: 30px;
     margin-top: 20px;
-    background-color: black;
+    background-color: blue;
     color: white
 }
 .createcont {
@@ -163,7 +160,7 @@ a:hover {
     align-content: center;
     font-size: 30px;
     color: white;
-    background-color: black;
+    background-color: royalblue;
     margin-top: 10px;
     width: 500px
 }
@@ -171,7 +168,7 @@ a:hover {
 #cr {
     font-size: 30px;
     margin-top: 20px;
-    background-color: black;
+    background-color: purple;
     color: white
 }
 #log {
