@@ -1,5 +1,5 @@
 body, html {
-    background: url("http://sfwallpaper.com/images/gray-backgrounds-9.jpg");
+    background: url("https://cdn.wallpapersafari.com/7/93/fpw8ao.jpg");
     background-size: cover;
 }
 h1 {
@@ -32,7 +32,7 @@ a:hover {
     height: 60px;
     text-align: center;
     align-content: center;
-    margin-top: 
+    margin-top: -10px
     
 }
 
@@ -59,7 +59,7 @@ a:hover {
     background-color: brown;
     text-align: center;
     font-size: 25px;
-    margin-top: 190px;
+    margin-top: 210px;
     color: black
 
 
@@ -221,11 +221,11 @@ a:hover {
     font-family: 'Saira Stencil One', cursive;
 }
 .footer {
-    background-color: aqua;
+    background-image: url("https://cdn.commonwealthclub.org/s3fs-public/styles/hero/public/2018-05/Screen%20Shot%202018-05-18%20at%202.39.55%20PM.png?itok=xTC2TPnT");
     text-align: center;
     font-size: 25px;
-
-    color: black
+    height: 40px;
+    color: white
 }
 .items {
     width: 150px;
@@ -244,16 +244,16 @@ a:hover {
 .galax {
     background-image: url("https://cdn.commonwealthclub.org/s3fs-public/styles/hero/public/2018-05/Screen%20Shot%202018-05-18%20at%202.39.55%20PM.png?itok=xTC2TPnT");
     height: 160px;
-    margin-top: -50px
+    margin-top: -60px
 }
 .all {
     background-image: url("https://wallpaper-gallery.net/images/white-background-images/white-background-images-11.png");
     margin-top: -60px;
-    height: 550px
+    height: 560px
     
 }
 .allhome {
     background-image: url("https://cdn.csu.edu.au/__data/assets/image/0005/2869745/M_Management_IT_Banner_01.jpg");
     margin-top: -40px;
-    height: 650px
+    height: 700px
 }
