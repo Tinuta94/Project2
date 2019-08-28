@@ -33,7 +33,7 @@ storeRouter.get('/:storeId/edit', function (req, res) {
 storeRouter.post('/', function (req, res) {
     storesApi.addStore(req.body)
         .then((addStore) => {
-            res.redirect('/homeScreen/${login._id}')
+            res.redirect(`/homeScreen/${login._id}`)
         })
 })
 
@@ -41,14 +41,14 @@ storeRouter.put('/:storeId', function (req, res) {
 
     storesApi.updateStore(req.params.storeId, req.body)
         .then(() => {
-            res.redirect('/homeScreen/${login._id}')
+            res.redirect(`/homeScreen/${login._id}`)
         })
 })
 
 storeRouter.delete('/:storeId', function (req, res) {
     storesApi.deleteStore(req.params.storeId)
         .then((deletedStore) => {
-            res.redirect('/homeScreen/${login._id}')
+            res.redirect(`/homeScreen/${login._id}`)
         })
 })
 

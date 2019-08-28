@@ -33,7 +33,7 @@ clientRouter.get('/:clientId/edit', function (req, res) {
 clientRouter.post('/', function (req, res) {
   clientsApi.addClient(req.body)
     .then((addClient) => {
-      res.redirect('/homeScreen/${login._id}')
+      res.redirect(`/homeScreen/${login._id}`)
     })
 })
 
