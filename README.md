@@ -1,11 +1,10 @@
 # Project2
 # Galaxy
 
-Link: https://tinuta94.github.io/Project2/
+Link GitHub: https://tinuta94.github.io/Project2/
 
 
-Heroku link: 
-
+Heroku:  https://secure-castle-12366.herokuapp.com/login
 
 
 https://github.com/users/Tinuta94/projects/2
