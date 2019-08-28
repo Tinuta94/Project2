@@ -21,7 +21,7 @@ https://www.w3schools.com/w3css/4/w3.css
 
 # Technologies used:
 
-HTML,CSS,Javascript,Express,MongoDB
+HTML,CSS,Javascript,Express,Node,MongoDB
 
 # Wireframes
 
