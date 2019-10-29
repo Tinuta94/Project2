@@ -4,7 +4,7 @@
 Link GitHub: https://tinuta94.github.io/Project2/
 
 
-Heroku:  https://secure-castle-12366.herokuapp.com/login
+Heroku:  https://secure-castle-12366.herokuapp.com
 
 
 https://github.com/users/Tinuta94/projects/2
