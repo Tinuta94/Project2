@@ -33,21 +33,21 @@ clientRouter.get('/:clientId/edit', function (req, res) {
 clientRouter.post('/', function (req, res) {
   clientsApi.addClient(req.body)
     .then((addClient) => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 
 clientRouter.put('/:clientId', function (req, res) {
   clientsApi.updateClient(req.params.clientId, req.body)
     .then(() => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 
 clientRouter.delete('/:clientId', function (req, res) {
   clientsApi.deleteClient(req.params.clientId)
     .then((deletedClient) => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 

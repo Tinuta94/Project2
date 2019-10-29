@@ -32,21 +32,21 @@ productRouter.get('/:productId/edit', function (req, res) {
 productRouter.post('/', function (req, res) {
   productsApi.addProduct(req.body)
     .then((addProduct) => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 
 productRouter.put('/:productId', function (req, res) {
   productsApi.updateProduct(req.params.productId, req.body)
     .then(() => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 
 productRouter.delete('/:productId', function (req, res) {
   productsApi.deleteProduct(req.params.productId)
     .then((deletedProduct) => {
-      res.redirect('/homeScreen')
+      res.redirect('/')
     })
 })
 
