@@ -13,7 +13,7 @@ const { storeRouter } = require('./controllers/stores.js') //NEED TO UPDATE FROM
 const { clientRouter } = require('./controllers/clients.js')
 const { productRouter } = require('./controllers/products.js')
 const { homeScreenRouter } = require('./controllers/homescreen.js')
-const { loginRouter } = require('./controllers/login.js')
+
 /* Step 3
  * Register middleware...
  */
@@ -56,7 +56,7 @@ app.use('/stores', storeRouter)
 app.use('/clients', clientRouter)
 app.use('/products', productRouter)
 app.use('/homescreen', homeScreenRouter)
-app.use('/login', loginRouter)
+// app.use('/login', loginRouter)
 
 
 /* Step 5
