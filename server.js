@@ -55,7 +55,7 @@ app.set('view engine', 'hbs')
 app.use('/stores', storeRouter)
 app.use('/clients', clientRouter)
 app.use('/products', productRouter)
-app.use('/homescreen', homeScreenRouter)
+app.use('/', homeScreenRouter)
 // app.use('/login', loginRouter)
 
 
